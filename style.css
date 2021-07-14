@@ -1,0 +1,301 @@
+/* font link wiht google font*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+/* common style or utilities, user for some common property which is applicable for all */
+body{
+font-family: 'Poppins', sans-serif;
+background-color:#F3F1FF;
+}
+
+/* -------------------
+top section style start
+---------------- */
+/* top container use in top section, where we defile top section height and width */
+.top-container{
+    height: 677px;
+    width: 100%;
+    }
+
+    /* header div with backgroup color */
+
+    .heading-div{
+    height: 677px;
+    width: 100%;
+    background-color: #2D25A0;
+    }
+/* top div, with grid display, where two clomun will available in a line */
+    .top-div{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: #2D25A0;
+    /* grid-row-gap: 30px; */
+}
+
+/* top headeing gap / margin with page top */
+.top-heading{
+   margin-left: 156px;
+   margin-top: 207px;
+   margin-bottom: 169px;
+}
+
+/* font color, size and style of top title */
+.top-title{
+    font-size: 64px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+/* gap between top heading and banner */
+
+.top-banner{
+    margin-top: 135px;
+    margin-bottom: 86px; 
+}
+
+/* watch live button property */
+.watchlive-button{
+    width: 168px;
+    height: 44px;
+    text-align: center;
+    padding-top: 15px;
+    background-color: #E02C6D;  
+}
+
+/* watch live button anchor tag and fortawsame property */
+.watchlive-button a, .fas fa-arrow-right{
+    color:#FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+     background-color: #E02C6D; 
+   }
+
+   /* hover on watch live button */
+.watchlive-button:hover{
+    border: 3px solid rgb(111, 161, 226); 
+    
+}
+
+/* hover on watch live anchor text */
+.watchlive-button a:hover{
+    color: lightblue;
+}
+
+/* top banner image size */
+.top-banner img{
+    width: 556px;
+    height: 438px;
+}
+
+/* hover of top banner image wiht transformation and transition effect */
+
+.top-banner:hover {
+    transform: scale(1, 2) rotate(180deg);
+    transition: transform 5s ease-in-out;
+}
+
+
+/* ------------------------
+End of top section style
+---------------- -----------*/
+
+
+
+/* -------------------
+Player section style start
+---------------- */
+
+/* common background color style, witch will application for all section except top */
+
+.player-container , .highlight-container, .footer-container{
+    background-color: rgb(240, 240, 240);
+}
+
+/* player gird, 3 column in a line */
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+    margin-left: 180px;
+    margin-right: 210px;
+    margin-top: 70px;
+ }
+
+/* indivisual player's information and backgroup with margin */
+.player{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+}
+
+/* indivisual player's image style */
+
+.player-image{
+    width: 300px;
+    height: 256px;
+    margin-top: 15px;
+}
+
+/* indivisual player's detail margin style */
+
+.player-detail{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+/* indivisual player's name style */
+
+.player-name{
+margin-top: 10px;
+margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 28px;
+}
+/* indivisual player's details information style */
+
+.player-intro{
+    margin-top: 0px;
+    color:#6C6C6C;
+    font-size: 16px;
+    text-align: justify;
+}
+
+/*-----------------------
+ player section end  
+ -------------------------*/
+/* -------------------------
+start of hightlight section 
+--------------------------- */
+
+/* gird display style of hightlight div, where two column will avaialbe in one line */
+
+.highlight-div{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+ 
+}
+
+/* magin adjustment for highlight-heading */
+.highlight-heading{
+   margin-left: 182px;
+   margin-top: 168px;
+   margin-bottom: 158px;
+}
+
+/* font related style for .highlight-title */
+.highlight-title{
+    font-size: 48px;
+    font-weight: bold;
+    color: #0A0826;
+}
+
+/* font related style for .highlight-detail */
+
+.highlight-detail{
+    height: 100px;
+    width: 500px;
+    font-size: 16px;
+    font-weight: normal;
+    color: gray;
+    text-align: justify;  
+}
+
+/* margin related style for .highlight-banner */
+
+.highlight-banner{
+    margin-top: 135px;
+    margin-bottom: 86px; 
+}
+
+/* style for .highlight-banner image */
+
+.highlight-banner img{
+    width: 567px;
+    height: 427px;
+}
+
+/* hover effect with transform and transition */
+.highlight-banne:hover {
+    transform: scale(1, 2) rotate(180deg);
+    transition: transform 5s ease-in-out;
+}
+
+/* ----------------------
+end of hightlight section 
+--------------------------*/
+
+/*-------------------
+Start footer style 
+---------------------*/
+
+/* position in center of logo  */
+.footer-logo img{ 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   }
+
+   /* position all social media icon in one line and placed in center */
+   .footer-social-icon{
+    display: flex;
+    justify-content: center;
+}
+/* gap between to soical media icon */
+   .footer-icon{
+       margin-left: 5px;
+       margin-right: 5px;
+   }
+
+   /* hight and width of social media icon image */
+   .footer-icon img{
+    width: 32px;
+    height: 32px;
+    margin-left: auto;
+    margin-right: auto;
+   }
+/* copyrigt line style */
+   .footer-copy-right{
+       text-align: center;
+       font-size: 18px;
+   }
+
+   /*-------------------
+Start footer style 
+---------------------*/
+
+/* responsive website style */
+/* Media Queries Break Point*/
+/* Mobile Devices */
+@media only screen and (max-width:688px){
+    .top-container, .highlight-container{
+        width: 100%;
+        height: 100%;
+        
+    }
+   /* consider one column in one line */
+   
+    .top-div, .players, .highlight-div {
+       grid-template-columns: repeat(1,1fr);
+    }
+    .top-heading, .player {
+        flex-direction: column;
+    }    
+}
+
+/* tablet divies */
+ @media only screen and (min-width:689px) and (max-width:992px)
+ {
+
+    .top-container, .highlight-container{
+        width: 100%;
+        height: 100%;
+        
+    }
+   /* consider two column in one line */
+    .top-div, .players, .highlight-div {
+       grid-template-columns: repeat(2,1fr);
+    }
+    .top-heading, .player {
+        flex-direction: column;
+    }  
+ }
